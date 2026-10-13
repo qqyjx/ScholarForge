@@ -1,0 +1,12 @@
+# P0 Planning and novelty gate
+
+- Write the outline first. Audit the innovation claims against work from the last 18 months, one by one. Each contribution (C1 to C5) must be separable from a specific named paper. Use "novel" at most twice in the whole paper.
+- A theory contribution needs a non-trivial theorem. With three or more simplifying assumptions, do not write "we prove". State the assumptions plainly.
+- When several related papers are developed in parallel, fix seven non-overlap items between them up front: headline question, theorem statement, datasets, baselines, headline numbers, Figure 1 structure, and abstract sentences. Scan for overlap before submission.
+- **The scale of the model must be justified by the task.** Answer at the start: why does this task need an LLM or a large model? A referee who decides that "an 8B LLM for low-dimensional numeric control does not make sense" will discount the whole theoretical contribution. If you cannot answer, change the task, or make the LLM a component rather than the selling point. Good experiments will not cover this.
+- **Gate: no main-text writing until the author approves the novelty claim.** Reworking novelty is the most expensive rework.
+- **The scope of the title and abstract equals the scope the experiments measure.** At planning time, write down which part of the system the final experiments will measure. Any component the abstract sells but the experiments cannot measure either leaves the abstract or enters the experiment matrix. Referees give two options, "measure all of it" or "narrow the claim". There is no third.
+- **Reserve a "replace it" control arm for every novel component.** For example: a learned module versus a detector, attention, or random choice; a semantic embedding versus a capacity-matched hash or one-hot code; three signals versus one. Without that arm, the gain cannot be attributed to the component and the novelty claim fails.
+- There is no planning freeze. The rule is to finish the experiments before submitting. At planning time, add three items to the pre-registration deliverables: the necessity matrix, the theorem assumption table, and an artifact key for every number. They are prerequisites for the submission queue ([submission gate](submission-gate.md), section 1), not items to add just before submitting.
+
+For the full contribution ladder, five questions, and nearest-neighbor table, see [top-venue bar](top-venue-bar.md) section 1 and `../templates/PROPOSAL.md`.

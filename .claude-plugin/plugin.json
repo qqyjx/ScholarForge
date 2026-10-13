@@ -1,0 +1,8 @@
+{
+  "name": "scholarforge",
+  "version": "0.1.0",
+  "description": "ScholarForge: an agent-driven workflow for the research-paper lifecycle on Claude Code. One skill with criteria and acceptance gates for planning, experiments, writing, figures, submission, author response and camera-ready; a subagent; regression evals. Every number in a paper traces to a run artifact.",
+  "author": { "name": "Yifan Xiao" },
+  "license": "MIT",
+  "keywords": ["research", "paper", "machine-learning", "reproducibility", "provenance", "submission", "camera-ready", "latex", "multi-agent"]
+}

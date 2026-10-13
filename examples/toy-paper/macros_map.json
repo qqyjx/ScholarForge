@@ -1,0 +1,10 @@
+{
+  "macros": {
+    "accMain":   {"artifact": "results/main.json",     "key": "metrics.accuracy",   "scale": 100, "fmt": ".1f"},
+    "accBase":   {"artifact": "results/baseline.json", "key": "metrics.accuracy",   "scale": 100, "fmt": ".1f"},
+    "gainPP":    {"artifact": "results/main.json",     "key": "metrics.gain_pp",    "fmt": ".1f"},
+    "seStd":     {"artifact": "results/main.json",     "key": "metrics.stderr_pp",  "fmt": ".1f"},
+    "nSeeds":    {"artifact": "results/main.json",     "key": "run.n_seeds",        "fmt": "d"},
+    "nExamples": {"artifact": "results/main.json",     "key": "run.n_examples",     "fmt": "d"}
+  }
+}

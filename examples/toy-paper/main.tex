@@ -1,0 +1,51 @@
+\documentclass{article}
+% SYNTHETIC toy paper for the ScholarForge demo. It has no real content and no real results.
+% Every numeric macro below must resolve to a value in results/*.json through macros_map.json.
+% Two problems are planted on purpose: a stale macro (accBase) and a hard-coded number in Section 3.
+
+\newcommand{\accMain}{81.4}     % results/main.json: metrics.accuracy x 100
+\newcommand{\accBase}{73.9}     % results/baseline.json: metrics.accuracy x 100 (stale on purpose)
+\newcommand{\gainPP}{7.2}       % results/main.json: metrics.gain_pp
+\newcommand{\seStd}{1.2}        % results/main.json: metrics.stderr_pp
+\newcommand{\nSeeds}{5}         % results/main.json: run.n_seeds
+\newcommand{\nExamples}{160}    % results/main.json: run.n_examples (defined, never used: soft advisory)
+
+\begin{document}
+
+\title{A Synthetic Paper About Nothing}
+\author{Anonymous Authors}
+\maketitle
+
+\begin{abstract}
+This is a synthetic abstract. The toy method reaches \accMain\% accuracy against
+\accBase\% for the toy baseline, a gain of \gainPP{} points over \nSeeds{} seeds.
+\end{abstract}
+
+\section{Introduction}
+It is worth noting that this paper is a placeholder. We delve into a toy task
+and leverage a toy model to unlock a toy result.
+
+\section{Method}
+The method is a stand-in. It has no equations and no code.
+Crucially, it exists only to give the checkers something to read.
+
+\section{Results}
+Table~\ref{tab:main} lists the two systems. The mean difference is \gainPP{} points
+with a standard error of \seStd{} points.
+Our method also reaches 79.5\% on the held-out split. % planted: hard-coded number
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+System & Accuracy (\%) \\
+Baseline & \accBase \\
+Toy method & \accMain \\
+\end{tabular}
+\caption{Synthetic accuracy of two systems.}
+\label{tab:main}
+\end{table}
+
+\section{Conclusion}
+The toy method wins --- in a toy world.
+
+\end{document}

@@ -1,0 +1,5 @@
+{
+  "_meta": {"synthetic": true, "note": "Synthetic run artifact for the ScholarForge demo. Not a real measurement."},
+  "run": {"run_id": "toy-base-001", "n_seeds": 5, "n_examples": 160},
+  "metrics": {"accuracy": 0.74210}
+}
